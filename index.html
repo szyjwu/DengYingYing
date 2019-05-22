@@ -20,8 +20,21 @@
 -->
         </style>
 </head>
-    <body>
+<body>
 	
+
+<audio id="audio" src="music.mp3" preload="auto"  loop></audio> 
+<script>
+(function(){
+	function iPlay(){
+	var audio =$('#audio') ; //jQuery对象 
+	var au=audio[0]; //DOM对象 
+	au.play();
+	au.click();
+	}
+	iPlay();
+})();
+</script>
 
         <div id="main">
             <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(<a href="http://www.google.cn/chrome/intl/zh-CN/landing_chrome.html?hl=zh-CN&brand=CHMI">Chrome</a>)或者火狐(<a href="http://firefox.com.cn/download/">Firefox</a>)浏览器，或者其他游览器的最新版本。</div>
@@ -225,15 +238,5 @@
     </script>
 
 <center>&copy; <a href="#"> Jenkie@163.com </a></center>
-
-
-		
-
-
-
 </body>
-
-
-
-
 </html>
